@@ -1198,7 +1198,6 @@ PRODUCT_PACKAGES += \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \
     manifest_btaudiocoreservices_qti.xml \
-    mapper.qti.xml \
     mwqem-saidl.xml \
     qasr_vintf.xml \
     qcrilhook-saidl.xml \
@@ -1213,8 +1212,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore-service.xml \
     vendor.qti.hardware.data.connectionaidl.xml \
     vendor.qti.hardware.data.iwlandata.xml \
-    vendor.qti.hardware.display.allocator-service.xml \
-    vendor.qti.hardware.display.composer-service3_v3_xiaomi.xml \
     vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.hexlp-service.xml \
     vendor.qti.hardware.qseecom@1.0-service.xml \
