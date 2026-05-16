@@ -14,6 +14,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/audio/sku_sun/resourcemanager_sun_mtp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_sun/resourcemanager_sun_mtp.xml \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
+    vendor/xiaomi/sm8750-common/proprietary/odm/firmware/168_fingerprintRecord_P_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/168_fingerprintRecord_P_RTP.bin \
+    vendor/xiaomi/sm8750-common/proprietary/odm/lib64/hw/fingerprint.goodix_us.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_us.so \
+    vendor/xiaomi/sm8750-common/proprietary/odm/lib64/hw/fingerprint.qcom_us.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.qcom_us.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/com.fingerprints.extension3-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension3-V1-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/init.boled.lightsensor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.boled.lightsensor.rc \
@@ -530,6 +536,7 @@ PRODUCT_PACKAGES += \
     libav_miwnsencoder \
     libbacklight-calib \
     libbatching \
+    libbatterylistener \
     libbluetooth_audio_session_aidl_prebuilt \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
@@ -581,6 +588,7 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_stub \
     libfastcvopt \
     libfeutils \
+    libfmpal \
     libgame_enhance \
     libgdtap \
     libgeofencing \
@@ -595,6 +603,7 @@ PRODUCT_PACKAGES += \
     libhdr_backlight_adapter \
     libhdr_tm \
     libhdrdynamic \
+    libhfp_pal \
     libhdrdynamicootf \
     libhdrvivid \
     libidl \
