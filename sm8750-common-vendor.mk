@@ -14,27 +14,109 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/audio/sku_sun/resourcemanager_sun_mtp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_sun/resourcemanager_sun_mtp.xml \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
-    vendor/xiaomi/sm8750-common/proprietary/odm/firmware/168_fingerprintRecord_P_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/168_fingerprintRecord_P_RTP.bin \
-    vendor/xiaomi/sm8750-common/proprietary/odm/lib64/hw/fingerprint.goodix_us.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_us.so \
-    vendor/xiaomi/sm8750-common/proprietary/odm/lib64/hw/fingerprint.qcom_us.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.qcom_us.so \
-    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/com.fingerprints.extension3-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension3-V1-ndk.so \
-    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
-    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/init.boled.lightsensor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.boled.lightsensor.rc \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/init.mfp-daemon.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.mfp-daemon.aidl.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/misensor_camera.rc:$(TARGET_COPY_OUT_ODM)/etc/init/misensor_camera.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/nfc-service-st.rc:$(TARGET_COPY_OUT_ODM)/etc/init/nfc-service-st.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay-service.rc \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/izat_device.conf:$(TARGET_COPY_OUT_ODM)/etc/izat_device.conf \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-hal-st.conf \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/permissions/vendor.hardware.vibratorfeature-permission.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor.hardware.vibratorfeature-permission.xml \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/5cm_blue.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/5cm_blue.png \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/5cm_gray.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/5cm_gray.png \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/5cm_green.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/5cm_green.png \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/5cm_red.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/5cm_red.png \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/5cm_white.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/5cm_white.png \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/ak7323.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/ak7323.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/ak991x_dri_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/center_cali_all.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/center_cali_all.png \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/center_cali_x.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/center_cali_x.png \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/center_cali_y.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/center_cali_y.png \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/chre_dynamic_sensors.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/chre_dynamic_sensors.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/json.lst \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/lightSensorConfig.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/lightSensorConfig.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/lightSensorConfigSec.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/lightSensorConfigSec.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/pakala_ccd_base.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/pakala_ccd_base.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/qsh_camera_aon_front_i_1.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_aon_front_i_1.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/qsh_camera_aon_front_ii_1.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_aon_front_ii_1.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/qsh_camera_aon_rear_i_2.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_aon_rear_i_2.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/qsh_camera_aon_rear_ii_2.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_aon_rear_ii_2.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/qsh_camera_common.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_common.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/qsh_camera_imx688_6.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_imx688_6.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/qsh_camera_imx688_6_actuator.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_imx688_6_actuator.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/qsh_camera_ov32c4c_4.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_ov32c4c_4.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_ak7323.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_ak7323.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_ak991x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_ak991x_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_bmi26x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_bmi26x_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_bmp5_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_bmp5_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_default_sensors.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_default_sensors.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_dynamic_sensors.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_dynamic_sensors.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_dynamic_sensors_template.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_dynamic_sensors_template.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_irq.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_irq.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_lsm6dsv_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_lsm6dsv_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_power_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_power_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_spl07_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_spl07_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_sx937x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_sx937x_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_tcs3408.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_tcs3408.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_tcs3720_fb.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_tcs3720_fb.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sm8750_vl53l1_tof_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8750_vl53l1_tof_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_amd.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_aod.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_aod.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_aont.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_ccd_v1_0_amd.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_ccd_v1_0_amd.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_ccd_v3_1_walk.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_ccd_v3_1_walk.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_ccd_v4_0_sensors.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_ccd_v4_0_sensors.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_ccd_v5_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_ccd_v5_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_ccd_v5_1_te_cd_regs.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_ccd_v5_1_te_cd_regs.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_ccd_v6_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_ccd_v6_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_ccd_v6_0_sensors.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_ccd_v6_0_sensors.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_ccd_v6_0_te_cd_regs.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_ccd_v6_0_te_cd_regs.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_cm.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_collision_detection.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_collision_detection.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_dae.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_dbtap.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_dbtap.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_device_orient.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_diag_filter.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_direct_channel.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_direct_channel.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_distance_bound.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_distance_bound.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_dpc.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_flight_md.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_flight_md.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_fmv.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_gyro_cal.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_gyro_cal_dynamic.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_gyro_cal_dynamic.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_healthy_use_of_mobile.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_healthy_use_of_mobile.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_mag_cal.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_nonui.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_nonui.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_oem_pocket.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_oem_pocket.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_offbody_detect_phone.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_offbody_detect_phone.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_pedometer.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_pedometer.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_pointing_light_source.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_pointing_light_source.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_rmd.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_rotv.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_sar_algo.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_sar_algo.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_sar_algo_1.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_sar_algo_1.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_screen_down.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_screen_down.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_smd.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_tilt.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_tilt_to_wake.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sns_transport_ppe.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_transport_ppe.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sx937x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sx937x_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/sx937x_reg_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sx937x_reg_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/tcs3408.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/tcs3408.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/vi5300_tof_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/vi5300_tof_0.json \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/sensors/config/vl53l1_tof_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/vl53l1_tof_0.json \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/st54l_conf.txt:$(TARGET_COPY_OUT_ODM)/etc/st54l_conf.txt \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/ueventd.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc \
     vendor/xiaomi/sm8750-common/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
+    vendor/xiaomi/sm8750-common/proprietary/odm/firmware/168_fingerprintRecord_P_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/168_fingerprintRecord_P_RTP.bin \
+    vendor/xiaomi/sm8750-common/proprietary/odm/firmware/192_hapticsVideo_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/192_hapticsVideo_RTP.bin \
     vendor/xiaomi/sm8750-common/proprietary/odm/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.b00 \
     vendor/xiaomi/sm8750-common/proprietary/odm/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.b01 \
     vendor/xiaomi/sm8750-common/proprietary/odm/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.b02 \
@@ -114,11 +196,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/permissions/com.nxp.nfc.nq.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.nxp.nfc.nq.xml \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
-    vendor/xiaomi/sm8750-common/proprietary/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
+    vendor/xiaomi/sm8750-common/proprietary/system_ext/etc/task_profiles_cameraopt.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/task_profiles_cameraopt.json \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/1-SN1X0_SPC.txt:$(TARGET_COPY_OUT_VENDOR)/etc/1-SN1X0_SPC.txt \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/click.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/click.pcm \
@@ -213,6 +295,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/display/ubwc_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/ubwc_alignments.json \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/display/video_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/video_alignments.json \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/displayconfig/display_id_4630946916234099603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946916234099603.xml \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/eva/facedetection/bias.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/bias.dat \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/eva/facedetection/weight.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/weight.dat \
@@ -231,6 +317,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/hrtf5c.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hrtf5c.bin \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/android.hardware.bluetooth@aidl-service-qti-debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@aidl-service-qti-debug.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element-service.qti.rc \
@@ -273,6 +360,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/tlpd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tlpd.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.qti.diag_userdebug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag_userdebug.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm-service.rc \
@@ -292,6 +380,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.micharge-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.micharge-service.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/kvh2xml.xml:$(TARGET_COPY_OUT_VENDOR)/etc/kvh2xml.xml \
@@ -418,13 +507,40 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/xiaomi/sm8750-common/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/xiaomi/sm8750-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
-    vendor/xiaomi/sm8750-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
+    vendor/xiaomi/sm8750-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.frameworks.sensorservice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservice-V1-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.audio.core-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.core-V2-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.audio.core.sounddose-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.core.sounddose-V1-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.audio.core.sounddose-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.core.sounddose-V2-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.audio.effect-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.effect-V2-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.biometrics.common-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.common-V4-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.biometrics.common.thread.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.common.thread.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.biometrics.common.util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.common.util.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint-V5-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint-V5-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.bluetooth.audio-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio-V4-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio-impl.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.common-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.common-V2-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.common.fmq-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.common.fmq-V1-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.sensors-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors-V2-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.hardware.soundtrigger3-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.soundtrigger3-V1-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.media.audio.common.types-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.media.audio.common.types-V3-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/android.media.audio.common.types-V6-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.media.audio.common.types-V6-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libalsautilsv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautilsv2.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libaudio_aidl_conversion_common_ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_aidl_conversion_common_ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libaudioaidlcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioaidlcommon.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libaudioroute.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioroute.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioutils.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_aidl.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediautils_vendor.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libnbaio_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnbaio_mono.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libtinyalsav2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyalsav2.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/qti-audio-types-aidl-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qti-audio-types-aidl-V1-ndk.so
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio.core.sounddose-V1-ndk_prebuilt \
-    android.hardware.bluetooth.audio-impl_prebuilt \
-    android.hardware.soundtrigger3-V1-ndk_prebuilt \
+    android.hardware.vibrator-V1-ndk_platform \
     btaudio_offload_if \
+    com.fingerprints.extension3-V1-ndk \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -467,6 +583,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.soter-impl \
+    vibrator.default \
     vulkan.adreno \
     lib-imscommon \
     lib-imsdcservice \
@@ -527,17 +644,14 @@ PRODUCT_PACKAGES += \
     libar-pal \
     libarmemlog \
     libats \
-    libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_log_utils \
     libaudiocloudctrl \
     libaudioplatformconverter.qti \
     libaudioserviceexampleimpl \
-    libaudioutils_shim \
     libav_miwnsencoder \
     libbacklight-calib \
     libbatching \
     libbatterylistener \
-    libbluetooth_audio_session_aidl_prebuilt \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -603,16 +717,14 @@ PRODUCT_PACKAGES += \
     libhdr_backlight_adapter \
     libhdr_tm \
     libhdrdynamic \
-    libhfp_pal \
     libhdrdynamicootf \
     libhdrvivid \
+    libhfp_pal \
     libidl \
     libintervmipc \
     libizat_client_api \
     libizat_core \
     libjnihelper \
-    libjpegdecoder_prebuilt \
-    libjpegencoder_prebuilt \
     libkcl \
     libkernelmanager \
     libkeymasterdeviceutils \
@@ -830,7 +942,6 @@ PRODUCT_PACKAGES += \
     libsys_info_cache \
     libsystem_health_mon2 \
     libtaautoload \
-    libtensorflowlite_c_vendor \
     libtestutils \
     libthermalclient \
     libthreadutils \
@@ -844,7 +955,6 @@ PRODUCT_PACKAGES += \
     libtlpd_logger \
     libtrustedapploader \
     libubwcp \
-    libultrahdr_prebuilt \
     libultrasound_notify \
     libvideoservice_utils \
     libvideotxr \
@@ -942,6 +1052,7 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
+    vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
@@ -987,6 +1098,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dsp-V1-ndk \
     vendor.qti.hardware.fingerprint-V1-ndk \
+    vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.fm-V1-ndk \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.hexlp-V1-ndk \
@@ -1086,6 +1198,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform \
     vendor.xiaomi.hardware.display.mihwcextension-V1-ndk \
     vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
+    vendor.xiaomi.hardware.fingerprintextension-V1-ndk \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.micharge-V2-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk \
@@ -1120,6 +1233,7 @@ PRODUCT_PACKAGES += \
     libQnnModelDlc \
     libQnnSaver \
     libQnnSystem \
+    libaachaptics \
     libadaptivehdr \
     libaudioroute_ext \
     libbarrage \
@@ -1179,6 +1293,7 @@ PRODUCT_PACKAGES += \
     uimgbalibrary \
     uimgbamanagerlibrary \
     uimservicelibrary \
+    qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
@@ -1257,8 +1372,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
+    vendor.xiaomi.hardware.micharge.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
+    AHBF-V3-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
+    fod-aidl.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     misensor_camera.xml \
     vendor.qti.camera.provider.xml \
@@ -1266,10 +1384,12 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.camera.aon-impl.xml \
     vendor.xiaomi.hardware.aidl.intentaware-service.xml \
     vendor.xiaomi.hardware.aidlbgservice-service.xml \
+    vendor.xiaomi.hardware.vibratorfeature.service.xml \
     vendor.xiaomi.hw.touchfeature-service.xml \
     vendor.xiaomi.sensor.citsensorservice.aidl.xml \
     adpl \
     adsprpcd \
+    audioadsprpcd \
     batterysecret \
     cdsprpcd \
     cnd \
@@ -1299,6 +1419,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.xiaomi.hardware.displayfeature_aidl-service \
+    vendor.xiaomi.hardware.micharge-service \
     ims-dataservice-daemon \
     ims_rtp_daemon \
     imsdaemon \
@@ -1369,6 +1490,8 @@ PRODUCT_PACKAGES += \
     xtwifi-client \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.nfc-service-st \
+    mfp-daemon \
+    vendor.xiaomi.hardware.vibratorfeature.service \
     vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl \
     mlipayd \

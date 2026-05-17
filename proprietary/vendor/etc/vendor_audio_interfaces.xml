@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2023-2024 Qualcomm Innovation Center, Inc. All rights reserved.
+SPDX-License-Identifier: BSD-3-Clause-Clear
+-->
 <libraries>
+    <!--
+    method expected API signature
+    "int32_t <function_name>()"
+    -->
     <library name = "agmservice" libraryName="libagmipcservice.so"
             method="registerService" mandatory="true"/>
     <library name = "palservice" libraryName="libpalipcservice.so"
@@ -17,5 +25,7 @@
     <library name = "sthal" libraryName="libsoundtriggerhal.qti.so"
             method="createISoundTriggerFactory" mandatory="true" />
     <library name="btaudio_sw" libraryName="android.hardware.bluetooth.audio_sw.so"
-            method="registerIModuleBluetoothSWQti" mandatory="true" />
+            method="registerIModuleBluetoothSWQti" mandatory="false" />
+    <library name = "asr" libraryName="libqasr.so"
+            method="registerService" mandatory="false" />
 </libraries>
