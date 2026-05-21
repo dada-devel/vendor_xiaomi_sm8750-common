@@ -1435,7 +1435,6 @@ PRODUCT_PACKAGES += \
     deviceinfo-saidl.xml \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \
-    manifest_audiocorehal_default.xml \
     manifest_btaudiocoreservices_qti.xml \
     mwqem-saidl.xml \
     qasr_vintf.xml \
@@ -1600,3 +1599,10 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
+
+# Conditionally include audio HAL manifest if not provided by hardware tree
+# (LineageOS disables qcom-caf audio HAL, InfinityX enables it)
+ifeq ($(wildcard $(TOPDIR)hardware/qcom-caf/sm8750/audio/primary-hal/hal/default/Android.bp),)
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/vintf/manifest/manifest_audiocorehal_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_audiocorehal_default.xml
+endif
