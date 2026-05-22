@@ -22047,6 +22047,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.drm-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.drm-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "android.hardware.radio.config.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.config.xml",
@@ -22257,6 +22266,15 @@ prebuilt_etc_xml {
     name: "imsdcservice-saidl.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/imsdcservice-saidl.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_audiocorehal_default.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_audiocorehal_default.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,

@@ -337,6 +337,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/audio/sku_sun/resourcemanager_sun_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/resourcemanager_sun_mtp.xml \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/audio_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio_diag.cfg \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.json \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
@@ -635,6 +642,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libaudioroute.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioroute.so \
     vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioutils.so \
     vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_aidl.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/lib_bt_bundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_bundle.so \
     vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediautils_vendor.so \
     vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libnbaio_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnbaio_mono.so \
     vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libtinyalsav2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyalsav2.so \
@@ -1411,6 +1419,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.2-java \
     vendor.qti.ims.rcsuceaidlservice-V1-java \
     ImsRtpService-aidl.xml \
+    android.hardware.drm-service.xml \
     android.hardware.radio.config.xml \
     android.hardware.radio.data.xml \
     android.hardware.radio.messaging.xml \
@@ -1435,6 +1444,7 @@ PRODUCT_PACKAGES += \
     deviceinfo-saidl.xml \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \
+    manifest_audiocorehal_default.xml \
     manifest_btaudiocoreservices_qti.xml \
     mwqem-saidl.xml \
     qasr_vintf.xml \
@@ -1599,10 +1609,3 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
-
-# Conditionally include audio HAL manifest if not provided by hardware tree
-# (LineageOS disables qcom-caf audio HAL, InfinityX enables it)
-ifeq ($(wildcard $(TOPDIR)hardware/qcom-caf/sm8750/audio/primary-hal/hal/default/Android.bp),)
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/vintf/manifest/manifest_audiocorehal_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_audiocorehal_default.xml
-endif
