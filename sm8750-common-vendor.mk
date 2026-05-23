@@ -647,7 +647,36 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libnbaio_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnbaio_mono.so \
     vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libtinyalsav2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyalsav2.so \
     vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2.so \
-    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/qti-audio-types-aidl-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qti-audio-types-aidl-V1-ndk.so
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/qti-audio-types-aidl-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qti-audio-types-aidl-V1-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdolbyclstc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyclstc.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdolbydecoderprocessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbydecoderprocessor.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdolbyeglcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyeglcore.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdolbyencoderprocessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyencoderprocessor.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdolbyottcameracontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyottcameracontrol.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdolbyproxyandroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyproxyandroid.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libqcodec2_dolbydecoderfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_dolbydecoderfilter.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libqcodec2_dolbyencoderfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_dolbyencoderfilter.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/soundfx/libhwdapaidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhwdapaidl.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/soundfx/libdlbvol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdlbvol.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswvqe.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/soundfx/libdlbvolaidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdlbvolaidl.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/soundfx/libspatializeraidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libspatializeraidl.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/soundfx/libswgamedapaidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswgamedapaidl.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/soundfx/libswspatializeraidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswspatializeraidl.so \
+    vendor/xiaomi/sm8750-common/proprietary/odm/etc/surfaceflinger/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/surfaceflinger/dolby_vision.cfg \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/bin/hw/vendor.dolby.dms.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.dms.service \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/vendor.dolby.dms-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.dms-V1-ndk.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdeccfg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeccfg.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdlbdsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdlbpreg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbpreg.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libdmshal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdmshal.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/libspatializerparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspatializerparamstorage.so \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0.so
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
