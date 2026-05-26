@@ -312,6 +312,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/heavy_click.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/heavy_click.pcm \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/pop.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/pop.pcm \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/reserved_1.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_1.pcm \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/reserved_2.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_2.pcm \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/reserved_3.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_3.pcm \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/reserved_4.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_4.pcm \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/reserved_5.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_5.pcm \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/reserved_6.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_6.pcm \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/reserved_7.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_7.pcm \
+    vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/reserved_8.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_8.pcm \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/texture_tick.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/texture_tick.pcm \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/thud.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/thud.pcm \
     vendor/xiaomi/sm8750-common/proprietary/vendor/etc/acdbdata/haptics_data/tick.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/tick.pcm \
