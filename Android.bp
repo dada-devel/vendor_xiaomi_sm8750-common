@@ -25921,6 +25921,13 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/android.hardware.vibrator-V1-ndk_platform.so",
             ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libdl",
+                "libm",
+            ],
         },
     },
     compile_multilib: "64",
@@ -25939,6 +25946,13 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so",
             ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libdl",
+                "libm",
+            ],
         },
     },
     compile_multilib: "64",
@@ -25956,6 +25970,13 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/hw/vibrator.default.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libdl",
+                "liblog",
+                "libm",
             ],
         },
     },
