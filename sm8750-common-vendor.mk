@@ -1637,7 +1637,14 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl \
     mlipayd \
-    toucheventcheck
+    toucheventcheck \
+    vendor.xiaomi.hardware.vibratorfeature.service \
+    android.hardware.vibrator-V1-ndk_platform \
+    vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform \
+    vibrator.default \
+    vendor.xiaomi.hardware.vibratorfeature.service.rc \
+    vendor.hardware.vibratorfeature-permission.xml \
+    vendor.xiaomi.hardware.vibratorfeature.service.xml
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
