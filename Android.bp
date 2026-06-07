@@ -26004,6 +26004,7 @@ prebuilt_etc_xml {
     device_specific: true,
 }
 
+
 prebuilt_etc_xml {
     name: "vendor.xiaomi.hardware.vibratorfeature.service.xml",
     owner: "xiaomi",
