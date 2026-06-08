@@ -1846,7 +1846,6 @@ PRODUCT_PACKAGES += \
     vibrator.default \
     vendor.xiaomi.hardware.vibratorfeature.service.rc \
     vendor.hardware.vibratorfeature-permission.xml \
-    vendor.xiaomi.hardware.vibratorfeature.service.xml
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
@@ -1854,3 +1853,8 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
+
+# Vibrator AGM device library
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/odm/lib64/libagmdevice.so:$(TARGET_COPY_OUT_ODM)/lib64/libagmdevice.so
+
